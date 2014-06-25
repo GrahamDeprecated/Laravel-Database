@@ -23,7 +23,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  *
  * @package    Laravel-Database
  * @author     Graham Campbell
- * @copyright  Copyright 2013-2014 Graham Campbell
+ * @copyright  Copyright 2014 Graham Campbell
  * @license    https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Database
  */
