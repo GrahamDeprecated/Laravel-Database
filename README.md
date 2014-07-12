@@ -30,8 +30,7 @@ Laravel Database requires no configuration. Just follow the simple install instr
 
 ## Usage
 
-There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-Database
-) for Laravel Database.
+There is currently no usage documentation besides the [API Documentation](http://docs.grahamjcampbell.co.uk) for Laravel Database.
 
 You may see an example of implementation in [Laravel Credentials](https://github.com/GrahamCampbell/Laravel-Credentials) or [Bootstrap CMS](https://github.com/GrahamCampbell/Bootstrap-CMS).
 
