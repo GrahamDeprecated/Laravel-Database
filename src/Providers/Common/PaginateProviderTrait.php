@@ -51,7 +51,7 @@ trait PaginateProviderTrait
             $values = $model::paginate($model::$paginate, $model::$index);
         }
 
-        if ($values->getFactory()->getCurrentPage() > $values->getLastPage() && $values->getFactory()->getCurrentPage() !== 1) {
+        if (!$this->isPageInRange() && !$this->isFirstPage()) {
             throw new NotFoundHttpException();
         }
 
@@ -60,6 +60,26 @@ trait PaginateProviderTrait
         }
 
         return $values;
+    }
+
+    /**
+     * Is this current page in range?
+     *
+     * @return bool
+     */
+    protected function isPageInRange()
+    {
+        return ($values->getFactory()->getCurrentPage() <= $values->getLastPage());
+    }
+
+    /**
+     * Is the current page the first page?
+     *
+     * @return bool
+     */
+    protected function isFirstPage()
+    {
+        return ($values->getFactory()->getCurrentPage() === 1);
     }
 
     /**
