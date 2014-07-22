@@ -16,6 +16,7 @@
 
 namespace GrahamCampbell\Database\Providers\Common;
 
+use Illuminate\Pagination\Paginator;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
@@ -46,40 +47,42 @@ trait PaginateProviderTrait
         $model = $this->model;
 
         if (property_exists($model, 'order')) {
-            $values = $model::orderBy($model::$order, $model::$sort)->paginate($model::$paginate, $model::$index);
+            $paginator = $model::orderBy($model::$order, $model::$sort)->paginate($model::$paginate, $model::$index);
         } else {
-            $values = $model::paginate($model::$paginate, $model::$index);
+            $paginator = $model::paginate($model::$paginate, $model::$index);
         }
 
-        if (!$this->isPageInRange() && !$this->isFirstPage()) {
+        if (!$this->isPageInRange($paginator) && !$this->isFirstPage($paginator)) {
             throw new NotFoundHttpException();
         }
 
-        if ($values->getTotal()) {
-            $this->paginateLinks = $values->links();
+        if ($paginator->getTotal()) {
+            $this->paginateLinks = $paginator->links();
         }
 
-        return $values;
+        return $paginator;
     }
 
     /**
      * Is this current page in range?
      *
+     * @param  \Illuminate\Pagination\Paginator  $paginator
      * @return bool
      */
-    protected function isPageInRange()
+    protected function isPageInRange(Paginator $paginator)
     {
-        return ($values->getFactory()->getCurrentPage() <= $values->getLastPage());
+        return ($paginator->getFactory()->getCurrentPage() <= $paginator->getLastPage());
     }
 
     /**
      * Is the current page the first page?
      *
+     * @param  \Illuminate\Pagination\Paginator  $paginator
      * @return bool
      */
-    protected function isFirstPage()
+    protected function isFirstPage(Paginator $paginator)
     {
-        return ($values->getFactory()->getCurrentPage() === 1);
+        return ($paginator->getFactory()->getCurrentPage() === 1);
     }
 
     /**
