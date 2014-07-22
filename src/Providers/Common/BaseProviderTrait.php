@@ -118,24 +118,23 @@ trait BaseProviderTrait
         // get rules from the model if set
         if (isset($model::$rules)) {
             $rules = $model::$rules;
+        } else {
+            $rules = array();
         }
 
-        // return an empty array
-        if (!is_array($rules)) {
+        // if the there are no rules
+        if (!is_array($rules) || !$rules) {
+            // return an empty array
             return array();
         }
 
-        // return all of the rules
-        if (is_null($query)) {
+        // if the query is empty
+        if (!$query) {
+            // return all of the rules
             return array_filter($rules);
         }
 
-        // convert string to array
-        if (is_string($query)) {
-            $query = array($query);
-        }
-
-        // get the relevant rules
+        // return the relevant rules
         return array_filter(array_only($rules, $query));
     }
 
