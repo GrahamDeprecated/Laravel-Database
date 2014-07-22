@@ -31,7 +31,7 @@ trait SlugProviderTrait
      * Find an existing model by slug.
      *
      * @param  string  $slug
-     * @param  array   $input
+     * @param  array   $columns
      * @return mixed
      */
     public function find($slug, array $columns = array('*'))
