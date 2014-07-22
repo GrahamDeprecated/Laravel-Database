@@ -16,9 +16,9 @@
 
 namespace GrahamCampbell\Database\Models;
 
-use Illuminate\Database\Eloquent\Model as Eloquent;
-use GrahamCampbell\Database\Models\Interfaces\BaseModelInterface;
 use GrahamCampbell\Database\Models\Common\BaseModelTrait;
+use GrahamCampbell\Database\Models\Interfaces\BaseModelInterface;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
  * This is the abstract model class.

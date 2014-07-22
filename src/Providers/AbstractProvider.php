@@ -16,10 +16,10 @@
 
 namespace GrahamCampbell\Database\Providers;
 
+use GrahamCampbell\Database\Providers\Common\BaseProviderTrait;
+use GrahamCampbell\Database\Providers\Interfaces\BaseProviderInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Validation\Factory;
-use GrahamCampbell\Database\Providers\Interfaces\BaseProviderInterface;
-use GrahamCampbell\Database\Providers\Common\BaseProviderTrait;
 
 /**
  * This is the abstract provider class.
