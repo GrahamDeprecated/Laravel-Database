@@ -35,6 +35,8 @@ trait BaseModelTrait
      *
      * @param  array  $input
      * @return mixed
+     *
+     * @throws \Exception
      */
     public static function create(array $input)
     {
@@ -84,6 +86,8 @@ trait BaseModelTrait
      *
      * @param  array  $input
      * @return mixed
+     *
+     * @throws \Exception
      */
     public function update(array $input = array())
     {
@@ -132,6 +136,8 @@ trait BaseModelTrait
      * Delete an existing model.
      *
      * @return mixed
+     *
+     * @throws \Exception
      */
     public function delete()
     {

@@ -41,6 +41,8 @@ trait PaginateProviderTrait
      * Get a paginated list of the models.
      *
      * @return \Illuminate\Database\Eloquent\Collection
+     *
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      */
     public function paginate()
     {
