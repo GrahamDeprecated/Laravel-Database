@@ -19,19 +19,18 @@ namespace GrahamCampbell\Database\Providers\Interfaces;
 /**
  * This is the slug provider interface.
  *
- * @package    Laravel-Database
- * @author     Graham Campbell
- * @copyright  Copyright 2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-Database
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
 interface SlugProviderInterface
 {
     /**
      * Find an existing model by slug.
      *
-     * @param  string  $slug
-     * @param  array   $columns
+     * @param string   $slug
+     * @param string[] $columns
+     *
      * @return mixed
      */
     public function find($slug, array $columns = array('*'));

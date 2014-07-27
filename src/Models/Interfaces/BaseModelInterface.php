@@ -19,18 +19,17 @@ namespace GrahamCampbell\Database\Models\Interfaces;
 /**
  * This is the base model interface.
  *
- * @package    Laravel-Database
- * @author     Graham Campbell
- * @copyright  Copyright 2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-Database
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
 interface BaseModelInterface
 {
     /**
      * Create a new model.
      *
-     * @param  array  $input
+     * @param array $input
+     *
      * @return mixed
      */
     public static function create(array $input);
@@ -38,7 +37,8 @@ interface BaseModelInterface
     /**
      * Before creating a new model.
      *
-     * @param  array  $input
+     * @param array $input
+     *
      * @return mixed
      */
     public static function beforeCreate(array $input);
@@ -46,8 +46,9 @@ interface BaseModelInterface
     /**
      * After creating a new model.
      *
-     * @param  array  $input
-     * @param  mixed  $return
+     * @param array $input
+     * @param mixed $return
+     *
      * @return mixed
      */
     public static function afterCreate(array $input, $return);
@@ -55,7 +56,8 @@ interface BaseModelInterface
     /**
      * Update an existing model.
      *
-     * @param  array  $input
+     * @param array $input
+     *
      * @return mixed
      */
     public function update(array $input = array());
@@ -63,7 +65,8 @@ interface BaseModelInterface
     /**
      * Before updating an existing new model.
      *
-     * @param  array  $input
+     * @param array $input
+     *
      * @return mixed
      */
     public function beforeUpdate(array $input);
@@ -71,8 +74,9 @@ interface BaseModelInterface
     /**
      * After updating an existing model.
      *
-     * @param  array  $input
-     * @param  mixed  $return
+     * @param array $input
+     * @param mixed $return
+     *
      * @return mixed
      */
     public function afterUpdate(array $input, $return);
@@ -94,7 +98,8 @@ interface BaseModelInterface
     /**
      * After deleting an existing model.
      *
-     * @param  mixed  $return
+     * @param mixed $return
+     *
      * @return mixed
      */
     public function afterDelete($return);

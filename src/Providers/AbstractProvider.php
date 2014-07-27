@@ -24,11 +24,9 @@ use Illuminate\Validation\Factory;
 /**
  * This is the abstract provider class.
  *
- * @package    Laravel-Database
- * @author     Graham Campbell
- * @copyright  Copyright 2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-Database
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
 abstract class AbstractProvider implements BaseProviderInterface
 {
@@ -37,22 +35,23 @@ abstract class AbstractProvider implements BaseProviderInterface
     /**
      * The model to provide.
      *
-     * @var \Illuminate\Database\Eloquent\Model
+     * @type \Illuminate\Database\Eloquent\Model
      */
     protected $model;
 
     /**
      * The validator factory instance.
      *
-     * @var \Illuminate\Validation\Factory
+     * @type \Illuminate\Validation\Factory
      */
     protected $validator;
 
     /**
      * Create a new instance.
      *
-     * @param  \Illuminate\Database\Eloquent\Model  $model
-     * @param  \Illuminate\Validation\Factory  $validator
+     * @param \Illuminate\Database\Eloquent\Model $model
+     * @param \Illuminate\Validation\Factory      $validator
+     *
      * @return void
      */
     public function __construct(Model $model, Factory $validator)

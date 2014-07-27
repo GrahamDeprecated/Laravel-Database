@@ -23,11 +23,9 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 /**
  * This is the abstract model class.
  *
- * @package    Laravel-Database
- * @author     Graham Campbell
- * @copyright  Copyright 2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-Database
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
 abstract class AbstractModel extends Eloquent implements BaseModelInterface
 {
@@ -36,7 +34,7 @@ abstract class AbstractModel extends Eloquent implements BaseModelInterface
     /**
      * A list of methods protected from mass assignment.
      *
-     * @var array
+     * @type array
      */
     protected $guarded = array('_token', '_method', 'id');
 }

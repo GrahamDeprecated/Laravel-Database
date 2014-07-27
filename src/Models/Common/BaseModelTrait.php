@@ -22,21 +22,20 @@ use Illuminate\Support\Facades\Event as LaravelEvent;
 /**
  * This is the base model trait.
  *
- * @package    Laravel-Database
- * @author     Graham Campbell
- * @copyright  Copyright 2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-Database
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
 trait BaseModelTrait
 {
     /**
      * Create a new model.
      *
-     * @param  array  $input
-     * @return mixed
+     * @param array $input
      *
      * @throws \Exception
+     *
+     * @return mixed
      */
     public static function create(array $input)
     {
@@ -61,7 +60,8 @@ trait BaseModelTrait
     /**
      * Before creating a new model.
      *
-     * @param  array  $input
+     * @param array $input
+     *
      * @return mixed
      */
     public static function beforeCreate(array $input)
@@ -72,8 +72,9 @@ trait BaseModelTrait
     /**
      * After creating a new model.
      *
-     * @param  array  $input
-     * @param  mixed  $return
+     * @param array $input
+     * @param mixed $return
+     *
      * @return mixed
      */
     public static function afterCreate(array $input, $return)
@@ -84,10 +85,11 @@ trait BaseModelTrait
     /**
      * Update an existing model.
      *
-     * @param  array  $input
-     * @return mixed
+     * @param array $input
      *
      * @throws \Exception
+     *
+     * @return mixed
      */
     public function update(array $input = array())
     {
@@ -112,7 +114,8 @@ trait BaseModelTrait
     /**
      * Before updating an existing new model.
      *
-     * @param  array  $input
+     * @param array $input
+     *
      * @return mixed
      */
     public function beforeUpdate(array $input)
@@ -123,8 +126,9 @@ trait BaseModelTrait
     /**
      * After updating an existing model.
      *
-     * @param  array  $input
-     * @param  mixed  $return
+     * @param array $input
+     * @param mixed $return
+     *
      * @return mixed
      */
     public function afterUpdate(array $input, $return)
@@ -135,9 +139,9 @@ trait BaseModelTrait
     /**
      * Delete an existing model.
      *
-     * @return mixed
-     *
      * @throws \Exception
+     *
+     * @return mixed
      */
     public function delete()
     {
@@ -172,7 +176,8 @@ trait BaseModelTrait
     /**
      * After deleting an existing model.
      *
-     * @param  mixed  $return
+     * @param mixed $return
+     *
      * @return mixed
      */
     public function afterDelete($return)

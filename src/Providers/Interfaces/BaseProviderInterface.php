@@ -19,18 +19,17 @@ namespace GrahamCampbell\Database\Providers\Interfaces;
 /**
  * This is the base provider interface.
  *
- * @package    Laravel-Database
- * @author     Graham Campbell
- * @copyright  Copyright 2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-Database
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
 interface BaseProviderInterface
 {
     /**
      * Create a new model.
      *
-     * @param  array  $input
+     * @param array $input
+     *
      * @return mixed
      */
     public function create(array $input);
@@ -38,8 +37,9 @@ interface BaseProviderInterface
     /**
      * Find an existing model.
      *
-     * @param  int    $id
-     * @param  array  $columns
+     * @param int      $id
+     * @param string[] $columns
+     *
      * @return mixed
      */
     public function find($id, array $columns = array('*'));
@@ -47,7 +47,8 @@ interface BaseProviderInterface
     /**
      * Find all models.
      *
-     * @param  array  $columns
+     * @param string[] $columns
+     *
      * @return mixed
      */
     public function all(array $columns = array('*'));
@@ -69,7 +70,8 @@ interface BaseProviderInterface
     /**
      * Register an observer.
      *
-     * @param  object  $class
+     * @param object $class
+     *
      * @return $this
      */
     public function observe($class);
@@ -77,17 +79,19 @@ interface BaseProviderInterface
     /**
      * Return the rules.
      *
-     * @param  array|string  $query
-     * @return array
+     * @param string|string[] $query
+     *
+     * @return string[]
      */
     public function rules($query = null);
 
     /**
      * Validate the data.
      *
-     * @param  array         $data
-     * @param  array|string  $rules
-     * @param  bool          $custom
+     * @param array           $data
+     * @param string|string[] $rules
+     * @param bool            $custom
+     *
      * @return \Illuminate\Validation\Validator
      */
     public function validate(array $data, $rules = null, $custom = false);
