@@ -30,7 +30,9 @@ interface BaseModelInterface
      *
      * @param array $input
      *
-     * @return mixed
+     * @throws \Exception
+     *
+     * @return \Illuminate\Database\Eloquent\Model
      */
     public static function create(array $input);
 
@@ -39,17 +41,17 @@ interface BaseModelInterface
      *
      * @param array $input
      *
-     * @return mixed
+     * @return void
      */
     public static function beforeCreate(array $input);
 
     /**
      * After creating a new model.
      *
-     * @param array $input
-     * @param mixed $return
+     * @param array                               $input
+     * @param \Illuminate\Database\Eloquent\Model $return
      *
-     * @return mixed
+     * @return void
      */
     public static function afterCreate(array $input, $return);
 
@@ -58,7 +60,9 @@ interface BaseModelInterface
      *
      * @param array $input
      *
-     * @return mixed
+     * @throws \Exception
+     *
+     * @return bool|int
      */
     public function update(array $input = array());
 
@@ -67,40 +71,42 @@ interface BaseModelInterface
      *
      * @param array $input
      *
-     * @return mixed
+     * @return void
      */
     public function beforeUpdate(array $input);
 
     /**
      * After updating an existing model.
      *
-     * @param array $input
-     * @param mixed $return
+     * @param array    $input
+     * @param bool|int $return
      *
-     * @return mixed
+     * @return void
      */
     public function afterUpdate(array $input, $return);
 
     /**
      * Delete an existing model.
      *
-     * @return mixed
+     * @throws \Exception
+     *
+     * @return bool
      */
     public function delete();
 
     /**
      * Before deleting an existing model.
      *
-     * @return mixed
+     * @return void
      */
     public function beforeDelete();
 
     /**
      * After deleting an existing model.
      *
-     * @param mixed $return
+     * @param bool $return
      *
-     * @return mixed
+     * @return void
      */
     public function afterDelete($return);
 }

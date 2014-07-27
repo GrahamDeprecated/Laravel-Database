@@ -28,6 +28,8 @@ interface PaginateProviderInterface
     /**
      * Get a paginated list of the models.
      *
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+     *
      * @return \Illuminate\Database\Eloquent\Collection
      */
     public function paginate();

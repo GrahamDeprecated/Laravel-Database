@@ -16,6 +16,7 @@
 
 namespace GrahamCampbell\Database\Models\Common;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event as LaravelEvent;
 
@@ -35,7 +36,7 @@ trait BaseModelTrait
      *
      * @throws \Exception
      *
-     * @return mixed
+     * @return \Illuminate\Database\Eloquent\Model
      */
     public static function create(array $input)
     {
@@ -62,7 +63,7 @@ trait BaseModelTrait
      *
      * @param array $input
      *
-     * @return mixed
+     * @return void
      */
     public static function beforeCreate(array $input)
     {
@@ -72,12 +73,12 @@ trait BaseModelTrait
     /**
      * After creating a new model.
      *
-     * @param array $input
-     * @param mixed $return
+     * @param array                               $input
+     * @param \Illuminate\Database\Eloquent\Model $return
      *
-     * @return mixed
+     * @return void
      */
-    public static function afterCreate(array $input, $return)
+    public static function afterCreate(array $input, Model $return)
     {
         // can be overwritten by extending class
     }
@@ -89,7 +90,7 @@ trait BaseModelTrait
      *
      * @throws \Exception
      *
-     * @return mixed
+     * @return bool|int
      */
     public function update(array $input = array())
     {
@@ -116,7 +117,7 @@ trait BaseModelTrait
      *
      * @param array $input
      *
-     * @return mixed
+     * @return void
      */
     public function beforeUpdate(array $input)
     {
@@ -126,10 +127,10 @@ trait BaseModelTrait
     /**
      * After updating an existing model.
      *
-     * @param array $input
-     * @param mixed $return
+     * @param array    $input
+     * @param bool|int $return
      *
-     * @return mixed
+     * @return void
      */
     public function afterUpdate(array $input, $return)
     {
@@ -141,7 +142,7 @@ trait BaseModelTrait
      *
      * @throws \Exception
      *
-     * @return mixed
+     * @return bool
      */
     public function delete()
     {
@@ -166,7 +167,7 @@ trait BaseModelTrait
     /**
      * Before deleting an existing model.
      *
-     * @return mixed
+     * @return void
      */
     public function beforeDelete()
     {
@@ -176,9 +177,9 @@ trait BaseModelTrait
     /**
      * After deleting an existing model.
      *
-     * @param mixed $return
+     * @param bool $return
      *
-     * @return mixed
+     * @return void
      */
     public function afterDelete($return)
     {

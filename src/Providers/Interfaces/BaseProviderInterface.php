@@ -30,7 +30,7 @@ interface BaseProviderInterface
      *
      * @param array $input
      *
-     * @return mixed
+     * @return \Illuminate\Database\Eloquent\Model
      */
     public function create(array $input);
 
@@ -40,7 +40,7 @@ interface BaseProviderInterface
      * @param int      $id
      * @param string[] $columns
      *
-     * @return mixed
+     * @return \Illuminate\Database\Eloquent\Model
      */
     public function find($id, array $columns = array('*'));
 
@@ -49,7 +49,7 @@ interface BaseProviderInterface
      *
      * @param string[] $columns
      *
-     * @return mixed
+     * @return \Illuminate\Database\Eloquent\Collection
      */
     public function all(array $columns = array('*'));
 
@@ -70,7 +70,7 @@ interface BaseProviderInterface
     /**
      * Register an observer.
      *
-     * @param object $class
+     * @param object $object
      *
      * @return $this
      */
