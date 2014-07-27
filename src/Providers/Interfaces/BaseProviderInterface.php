@@ -70,11 +70,11 @@ interface BaseProviderInterface
     /**
      * Register an observer.
      *
-     * @param object $object
+     * @param object $observer
      *
      * @return $this
      */
-    public function observe($class);
+    public function observe($observer);
 
     /**
      * Return the rules.

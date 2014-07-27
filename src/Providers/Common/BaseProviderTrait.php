@@ -95,11 +95,11 @@ trait BaseProviderTrait
     /**
      * Register an observer.
      *
-     * @param object $object
+     * @param object $observer
      *
      * @return $this
      */
-    public function observe($object)
+    public function observe($observer)
     {
         $model = $this->model;
         $model::observe($object);
