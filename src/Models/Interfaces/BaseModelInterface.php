@@ -53,7 +53,7 @@ interface BaseModelInterface
      *
      * @return void
      */
-    public static function afterCreate(array $input, $return);
+    public static function afterCreate(array $input, Model $return);
 
     /**
      * Update an existing model.
