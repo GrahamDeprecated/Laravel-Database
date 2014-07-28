@@ -16,6 +16,8 @@
 
 namespace GrahamCampbell\Database\Models\Interfaces;
 
+use Illuminate\Database\Eloquent\Model;
+
 /**
  * This is the base model interface.
  *
