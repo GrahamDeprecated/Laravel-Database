@@ -102,7 +102,7 @@ trait BaseProviderTrait
     public function observe($observer)
     {
         $model = $this->model;
-        $model::observe($object);
+        $model::observe($observer);
 
         return $this;
     }
