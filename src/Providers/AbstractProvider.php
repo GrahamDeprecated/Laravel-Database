@@ -35,14 +35,14 @@ abstract class AbstractProvider implements BaseProviderInterface
     /**
      * The model to provide.
      *
-     * @type \Illuminate\Database\Eloquent\Model
+     * @var \Illuminate\Database\Eloquent\Model
      */
     protected $model;
 
     /**
      * The validator factory instance.
      *
-     * @type \Illuminate\Validation\Factory
+     * @var \Illuminate\Validation\Factory
      */
     protected $validator;
 

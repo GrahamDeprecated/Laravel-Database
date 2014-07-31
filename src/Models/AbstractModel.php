@@ -34,7 +34,7 @@ abstract class AbstractModel extends Eloquent implements BaseModelInterface
     /**
      * A list of methods protected from mass assignment.
      *
-     * @type array
+     * @var array
      */
     protected $guarded = array('_token', '_method', 'id');
 }
