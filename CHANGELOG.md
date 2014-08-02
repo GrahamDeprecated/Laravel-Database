@@ -2,8 +2,9 @@ CHANGE LOG
 ==========
 
 
-## V0.1.1 Alpha (Upcoming - August 2014)
+## V0.1.1 Alpha (02/08/2014)
 
+* Stricter interfaces
 * Minor fixes and tweaks
 
 
