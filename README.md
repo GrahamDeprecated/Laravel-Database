@@ -11,7 +11,7 @@ Laravel Database
 
 ## Introduction
 
-Laravel Database was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some extra database stuff for [Laravel 4.2+](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Database/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+Laravel Database was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some extra database stuff for [Laravel 4.2](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Database/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
 
 
 ## Installation
