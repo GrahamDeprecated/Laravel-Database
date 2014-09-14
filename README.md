@@ -9,14 +9,14 @@ Laravel Database
 [![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-Database.svg?style=flat-square)](https://github.com/GrahamCampbell/Laravel-Database/releases)
 
 
-### Looking for a laravel 5 compatable version?
+### Looking for a laravel 4 compatable version?
 
-Checkout the [master branch](https://github.com/GrahamCampbell/Laravel-Database/tree/master), installable by requiring `"graham-campbell/database": "0.2.*"`.
+Checkout the [0.1 branch](https://github.com/GrahamCampbell/Laravel-Database/tree/0.1), installable by requiring `"graham-campbell/database": "0.1.*"`.
 
 
 ## Introduction
 
-Laravel Database was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some extra database stuff for [Laravel 4.2](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Database/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+Laravel Database was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some extra database stuff for [Laravel 5](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Database/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
 
 
 ## Installation

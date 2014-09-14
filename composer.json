@@ -1,6 +1,6 @@
 {
     "name": "graham-campbell/database",
-    "description": "Database Provides Some Extra Database Stuff For Laravel 4.2",
+    "description": "Database Provides Some Extra Database Stuff For Laravel 5",
     "keywords": ["laravel", "framework", "eloquent", "model", "provider", "Database", "Laravel Database", "Laravel-Database", "Graham Campbell", "GrahamCampbell"],
     "license": "Apache-2.0",
     "authors": [
@@ -11,11 +11,12 @@
     ],
     "require": {
         "php": ">=5.4.7",
-        "illuminate/database": "~4.2",
-        "illuminate/events": "~4.2",
-        "illuminate/pagination": "~4.2",
-        "illuminate/support": "~4.2",
-        "illuminate/validation": "~4.2"
+        "illuminate/contracts": "~5.0",
+        "illuminate/database": "~5.0",
+        "illuminate/events": "~5.0",
+        "illuminate/pagination": "~5.0",
+        "illuminate/support": "~5.0",
+        "illuminate/validation": "~5.0"
     },
     "require-dev": {
         "graham-campbell/testbench": "~1.0"
@@ -28,6 +29,11 @@
     "autoload-dev": {
         "psr-4": {
             "GrahamCampbell\\Tests\\Database\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.2-dev"
         }
     },
     "minimum-stability": "dev",
