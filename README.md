@@ -9,6 +9,11 @@ Laravel Database
 [![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-Database.svg?style=flat-square)](https://github.com/GrahamCampbell/Laravel-Database/releases)
 
 
+### Looking for a laravel 5 compatable version?
+
+Checkout the [master branch](https://github.com/GrahamCampbell/Laravel-Database/tree/master), installable by requiring `"graham-campbell/database": "0.2.*"`.
+
+
 ## Introduction
 
 Laravel Database was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some extra database stuff for [Laravel 4.2](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Database/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
@@ -18,7 +23,7 @@ Laravel Database was created by, and is maintained by [Graham Campbell](https://
 
 [PHP](https://php.net) 5.4+ or [HHVM](http://hhvm.com) 3.2+, and [Composer](https://getcomposer.org) are required.
 
-To get the latest version of Laravel Database, simply require `"graham-campbell/database": "~0.1"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
+To get the latest version of Laravel Database, simply require `"graham-campbell/database": "0.1.*"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
 You can now utilise the classes in this package to speed up writing Laravel packages further. There are no service providers to register.
 
