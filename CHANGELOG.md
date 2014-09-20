@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V0.2 Alpha (Upcoming)
+
+* Upgraded to laravel 5
+
+
 ## V0.1.3 Alpha (Upcoming)
 
 * Various minor fixes
