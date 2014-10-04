@@ -7,7 +7,7 @@ CHANGE LOG
 * Upgraded to laravel 5
 
 
-## V0.1.3 Alpha (Upcoming)
+## V0.1.3 Alpha (04/10/2014)
 
 * Added cs fixers to the test suite
 * Improved the docs
