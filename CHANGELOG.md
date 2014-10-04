@@ -9,7 +9,8 @@ CHANGE LOG
 
 ## V0.1.3 Alpha (Upcoming)
 
-* Various minor fixes
+* Added cs fixers to the test suite
+* Improved the docs
 
 
 ## V0.1.2 Alpha (09/08/2014)

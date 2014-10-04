@@ -1,22 +1,17 @@
 Laravel Database
 ================
 
-
-[![Build Status](https://img.shields.io/travis/GrahamCampbell/Laravel-Database/master.svg?style=flat-square)](https://travis-ci.org/GrahamCampbell/Laravel-Database)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-Database.svg?style=flat-square)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Database/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/GrahamCampbell/Laravel-Database.svg?style=flat-square)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Database)
-[![Software License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-Database.svg?style=flat-square)](https://github.com/GrahamCampbell/Laravel-Database/releases)
-
-
-### Looking for a laravel 4 compatable version?
-
-Checkout the [0.1 branch](https://github.com/GrahamCampbell/Laravel-Database/tree/0.1), installable by requiring `"graham-campbell/database": "0.1.*"`.
-
-
-## Introduction
-
 Laravel Database was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some extra database stuff for [Laravel 5](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Database/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+
+![Laravel Database](https://cloud.githubusercontent.com/assets/2829600/4432283/a9868ffa-468c-11e4-955e-c46ea13b43a5.PNG)
+
+<p align="center">
+<a href="https://travis-ci.org/GrahamCampbell/Laravel-Database"><img src="https://img.shields.io/travis/GrahamCampbell/Laravel-Database/master.svg?style=flat-square" alt="Build Status"></img></a>
+<a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Database/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-Database.svg?style=flat-square" alt="Coverage Status"></img></a>
+<a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Database"><img src="https://img.shields.io/scrutinizer/g/GrahamCampbell/Laravel-Database.svg?style=flat-square" alt="Quality Score"></img></a>
+<a href="LICENSE.md"><img src="https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
+<a href="https://github.com/GrahamCampbell/Laravel-Database/releases"><img src="https://img.shields.io/github/release/GrahamCampbell/Laravel-Database.svg?style=flat-square" alt="Latest Version"></img></a>
+</p>
 
 
 ## Installation
@@ -26,6 +21,10 @@ Laravel Database was created by, and is maintained by [Graham Campbell](https://
 To get the latest version of Laravel Database, simply require `"graham-campbell/database": "0.2.*"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
 You can now utilise the classes in this package to speed up writing Laravel packages further. There are no service providers to register.
+
+#### Looking for a laravel 4 compatable version?
+
+Checkout the [0.1 branch](https://github.com/GrahamCampbell/Laravel-Database/tree/0.1), installable by requiring `"graham-campbell/database": "0.1.*"`.
 
 
 ## Configuration
