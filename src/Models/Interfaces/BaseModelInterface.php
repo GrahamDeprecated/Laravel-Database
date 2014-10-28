@@ -66,7 +66,7 @@ interface BaseModelInterface
      *
      * @return bool|int
      */
-    public function update(array $input = array());
+    public function update(array $input = []);
 
     /**
      * Before updating an existing new model.

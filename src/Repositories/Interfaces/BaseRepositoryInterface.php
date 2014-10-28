@@ -42,7 +42,7 @@ interface BaseRepositoryInterface
      *
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function find($id, array $columns = array('*'));
+    public function find($id, array $columns = ['*']);
 
     /**
      * Find all models.
@@ -51,7 +51,7 @@ interface BaseRepositoryInterface
      *
      * @return \Illuminate\Database\Eloquent\Collection
      */
-    public function all(array $columns = array('*'));
+    public function all(array $columns = ['*']);
 
     /**
      * Get a list of the models.

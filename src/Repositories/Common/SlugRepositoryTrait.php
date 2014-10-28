@@ -33,7 +33,7 @@ trait SlugRepositoryTrait
      *
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function find($slug, array $columns = array('*'))
+    public function find($slug, array $columns = ['*'])
     {
         $model = $this->model;
         return $model::where('slug', '=', $slug)->first($columns);

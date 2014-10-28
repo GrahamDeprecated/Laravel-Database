@@ -92,7 +92,7 @@ trait BaseModelTrait
      *
      * @return bool|int
      */
-    public function update(array $input = array())
+    public function update(array $input = [])
     {
         DB::beginTransaction();
 

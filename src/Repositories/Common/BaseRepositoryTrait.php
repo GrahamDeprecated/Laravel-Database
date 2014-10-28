@@ -46,7 +46,7 @@ trait BaseRepositoryTrait
      *
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function find($id, array $columns = array('*'))
+    public function find($id, array $columns = ['*'])
     {
         $model = $this->model;
         return $model::find($id, $columns);
@@ -59,7 +59,7 @@ trait BaseRepositoryTrait
      *
      * @return \Illuminate\Database\Eloquent\Collection
      */
-    public function all(array $columns = array('*'))
+    public function all(array $columns = ['*'])
     {
         $model = $this->model;
         return $model::all($columns);
@@ -122,13 +122,13 @@ trait BaseRepositoryTrait
         if (isset($model::$rules)) {
             $rules = $model::$rules;
         } else {
-            $rules = array();
+            $rules = [];
         }
 
         // if the there are no rules
         if (!is_array($rules) || !$rules) {
             // return an empty array
-            return array();
+            return [];
         }
 
         // if the query is empty
