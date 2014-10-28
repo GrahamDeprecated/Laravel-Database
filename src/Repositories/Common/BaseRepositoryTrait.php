@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Database\Providers\Common;
+namespace GrahamCampbell\Database\Repositories\Common;
 
 /**
- * This is the base provider trait.
+ * This is the base repository trait.
  *
  * @author    Graham Campbell <graham@mineuk.com>
  * @copyright 2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
-trait BaseProviderTrait
+trait BaseRepositoryTrait
 {
     /**
      * Create a new model.

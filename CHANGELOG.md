@@ -5,6 +5,7 @@ CHANGE LOG
 ## V0.2 Alpha (Upcoming)
 
 * Upgraded to laravel 5
+* Renamed providers to repositories
 
 
 ## V0.1.3 Alpha (04/10/2014)

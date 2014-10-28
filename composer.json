@@ -1,7 +1,7 @@
 {
     "name": "graham-campbell/database",
     "description": "Database Provides Some Extra Database Stuff For Laravel 5",
-    "keywords": ["laravel", "framework", "eloquent", "model", "provider", "Database", "Laravel Database", "Laravel-Database", "Graham Campbell", "GrahamCampbell"],
+    "keywords": ["laravel", "framework", "eloquent", "model", "repository", "Database", "Laravel Database", "Laravel-Database", "Graham Campbell", "GrahamCampbell"],
     "license": "Apache-2.0",
     "authors": [
         {

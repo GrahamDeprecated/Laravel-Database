@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Database\Providers\Interfaces;
+namespace GrahamCampbell\Database\Repositories\Interfaces;
 
 /**
- * This is the slug provider interface.
+ * This is the slug repository interface.
  *
  * @author    Graham Campbell <graham@mineuk.com>
  * @copyright 2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
-interface SlugProviderInterface
+interface SlugRepositoryInterface
 {
     /**
      * Find an existing model by slug.

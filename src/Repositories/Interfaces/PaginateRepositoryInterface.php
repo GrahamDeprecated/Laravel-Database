@@ -14,28 +14,30 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Database\Providers\Common;
+namespace GrahamCampbell\Database\Repositories\Interfaces;
 
 /**
- * This is the slug provider trait.
+ * This is the paginate repository interface.
  *
  * @author    Graham Campbell <graham@mineuk.com>
  * @copyright 2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
-trait SlugProviderTrait
+interface PaginateRepositoryInterface
 {
     /**
-     * Find an existing model by slug.
+     * Get a paginated list of the models.
      *
-     * @param string   $slug
-     * @param string[] $columns
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      *
-     * @return \Illuminate\Database\Eloquent\Model
+     * @return \Illuminate\Database\Eloquent\Collection
      */
-    public function find($slug, array $columns = array('*'))
-    {
-        $model = $this->model;
-        return $model::where('slug', '=', $slug)->first($columns);
-    }
+    public function paginate();
+
+    /**
+     * Get the paginated links.
+     *
+     * @return string
+     */
+    public function links();
 }

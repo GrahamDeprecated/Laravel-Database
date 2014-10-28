@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Database\Providers;
+namespace GrahamCampbell\Database\Repositories;
 
-use GrahamCampbell\Database\Providers\Common\BaseProviderTrait;
-use GrahamCampbell\Database\Providers\Interfaces\BaseProviderInterface;
+use GrahamCampbell\Database\Repositories\Common\BaseRepositoryTrait;
+use GrahamCampbell\Database\Repositories\Interfaces\BaseRepositoryInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Validation\Factory;
 
 /**
- * This is the abstract provider class.
+ * This is the abstract repository class.
  *
  * @author    Graham Campbell <graham@mineuk.com>
  * @copyright 2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Laravel-Database/blob/master/LICENSE.md> Apache 2.0
  */
-abstract class AbstractProvider implements BaseProviderInterface
+abstract class AbstractRepository implements BaseRepositoryInterface
 {
-    use BaseProviderTrait;
+    use BaseRepositoryTrait;
 
     /**
      * The model to provide.
