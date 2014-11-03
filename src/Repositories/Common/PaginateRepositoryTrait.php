@@ -56,8 +56,8 @@ trait PaginateRepositoryTrait
             throw new NotFoundHttpException();
         }
 
-        if ($paginator->getTotal()) {
-            $this->paginateLinks = $paginator->links();
+        if (count($paginator)) {
+            $this->paginateLinks = $paginator->render();
         }
 
         return $paginator;
@@ -72,7 +72,7 @@ trait PaginateRepositoryTrait
      */
     protected function isPageInRange(Paginator $paginator)
     {
-        return ($paginator->getFactory()->getCurrentPage() <= $paginator->getLastPage());
+        return ($paginator->currentPage() <= ceil($paginator->lastItem()/$paginator->perPage()));
     }
 
     /**
@@ -84,7 +84,7 @@ trait PaginateRepositoryTrait
      */
     protected function isFirstPage(Paginator $paginator)
     {
-        return ($paginator->getFactory()->getCurrentPage() === 1);
+        return ($paginator->currentPage() === 1);
     }
 
     /**
