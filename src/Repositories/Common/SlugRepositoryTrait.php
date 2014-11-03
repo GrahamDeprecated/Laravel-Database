@@ -36,6 +36,7 @@ trait SlugRepositoryTrait
     public function find($slug, array $columns = ['*'])
     {
         $model = $this->model;
+
         return $model::where('slug', '=', $slug)->first($columns);
     }
 }

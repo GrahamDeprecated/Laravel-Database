@@ -35,6 +35,7 @@ trait BaseRepositoryTrait
     public function create(array $input)
     {
         $model = $this->model;
+
         return $model::create($input);
     }
 
@@ -49,6 +50,7 @@ trait BaseRepositoryTrait
     public function find($id, array $columns = ['*'])
     {
         $model = $this->model;
+
         return $model::find($id, $columns);
     }
 
@@ -62,6 +64,7 @@ trait BaseRepositoryTrait
     public function all(array $columns = ['*'])
     {
         $model = $this->model;
+
         return $model::all($columns);
     }
 
@@ -89,6 +92,7 @@ trait BaseRepositoryTrait
     public function count()
     {
         $model = $this->model;
+
         return $model::where('id', '>=', 1)->count();
     }
 
