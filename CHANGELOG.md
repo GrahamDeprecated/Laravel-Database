@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V0.1.4 Alpha (Upcoming)
+
+* Removed the cs fixers
+
+
 ## V0.1.3 Alpha (04/10/2014)
 
 * Added cs fixers to the test suite
