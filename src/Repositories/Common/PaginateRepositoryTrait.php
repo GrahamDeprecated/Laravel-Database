@@ -16,7 +16,7 @@
 
 namespace GrahamCampbell\Database\Repositories\Common;
 
-use Illuminate\Pagination\Paginator;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
@@ -70,7 +70,7 @@ trait PaginateRepositoryTrait
      *
      * @return bool
      */
-    protected function isPageInRange(Paginator $paginator)
+    protected function isPageInRange(LengthAwarePaginator $paginator)
     {
         return ($paginator->currentPage() <= ceil($paginator->lastItem()/$paginator->perPage()));
     }
