@@ -2,7 +2,7 @@
     "name": "graham-campbell/database",
     "description": "Database Provides Some Extra Database Stuff For Laravel 4.2",
     "keywords": ["laravel", "framework", "eloquent", "model", "provider", "Database", "Laravel Database", "Laravel-Database", "Graham Campbell", "GrahamCampbell"],
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "Graham Campbell",
