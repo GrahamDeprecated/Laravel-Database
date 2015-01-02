@@ -28,10 +28,6 @@ You'll then need to run `composer install` or `composer update` to download it a
 
 You can now utilise the classes in this package to speed up writing Laravel packages further. There are no service providers to register.
 
-#### Looking for a laravel 5 compatable version?
-
-Checkout the [master branch](https://github.com/GrahamCampbell/Laravel-Database/tree/master), installable by requiring `"graham-campbell/database": "0.2.*"`.
-
 
 ## Configuration
 
