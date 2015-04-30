@@ -3,6 +3,10 @@ Laravel Database
 
 Laravel Database was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some extra database stuff for [Laravel 4.2](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Database/releases), [license](LICENSE), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
 
+## WARNING
+
+#### This package is no longer maintained.
+
 ![Laravel Database](https://cloud.githubusercontent.com/assets/2829600/4432285/a989191e-468c-11e4-8cf6-c70e4a229303.PNG)
 
 <p align="center">
